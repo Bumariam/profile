@@ -10,26 +10,7 @@
     tools:openDrawer="start"
     tools:context=".MainActivity">
 
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:layout_width="108dp"
-            android:layout_height="47dp"
-            android:text="@string/nav_activity_1"
-            android:textColor="@color/black"
-            android:textSize="26sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-    <androidx.appcompat.widget.LinearLayoutCompat
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -49,9 +30,7 @@
             android:id="@+id/fragment_container"/>
 
 
-
-    </androidx.appcompat.widget.LinearLayoutCompat>
-
+    </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
@@ -63,5 +42,6 @@
         app:itemIconTint="@color/primary_color"
         app:itemTextColor="@color/primary_color"/>
 
-
 </androidx.drawerlayout.widget.DrawerLayout>
+
+

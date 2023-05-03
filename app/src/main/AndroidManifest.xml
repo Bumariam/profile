@@ -12,6 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Drawer_profile"
         tools:targetApi="31">
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/rounded_button.xml" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
